@@ -78,4 +78,19 @@ $(document).ready(function() {
 		  }
 		});
 
+		// TWEETS SLIDER
+		var tweets = $(".tweets__tweet");
+		var currentTweet = 0;
+		function changeTweet() {
+			$(tweets[currentTweet]).fadeOut(300, function() {
+				if (currentTweet == tweets.length - 1) {
+					currentTweet = 0;
+				} else {
+					currentTweet++;
+				}
+				$(tweets[currentTweet]).fadeIn(300);
+			});
+		}
+		var tweetsTimer = setInterval(changeTweet, 3000);
+
 });

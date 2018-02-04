@@ -37,7 +37,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /*--------------HEADER-------------*/
 .header {
-  background: #4a24a8;
+  background: #4a24a8 url(../img/header-bg.png) no-repeat center center/cover;
   color: #fff;
   text-align: center;
   padding: 3rem 0;
@@ -471,9 +471,10 @@ h1, h2, h3, h4, h5, h6 {
   background-position: 20% top, 90% 20px;
 }
 
-.works__btn {
+.btn {
   display: inline-block;
-  padding: .5rem 2rem;
+  white-space: nowrap;
+  padding: .5rem 4rem;
   text-transform: uppercase;
   border-radius: 100px;
   background-color: #4ca9ff;
@@ -515,4 +516,102 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 30px;
 }
 
-/*----------COMMON STYLES----------*/
+/*--------------TWEETS--------------*/
+.tweets {
+  text-align: center;
+  padding: 5rem 0 11rem;
+  height: 560px;
+}
+
+.tweets__tweet {
+  display: none;
+  max-width: 830px;
+  margin: 0 auto;
+  padding: 5rem 5%;
+  -webkit-box-shadow: 0 30px 60px rgba(64, 72, 90, 0.15);
+  box-shadow: 0 30px 60px rgba(64, 72, 90, 0.15);
+}
+
+.tweets__tweet:first-child {
+  display: block;
+}
+
+.tweet__quote {
+  font-size: 2.4rem;
+  font-weight: 300;
+  margin: 0;
+}
+
+.tweet__author {
+  height: 6.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  max-width: 230px;
+  margin: 4rem auto 0;
+  text-align: left;
+  font-style: normal;
+  line-height: 1.5;
+}
+
+.author__img {
+  float: left;
+  width: 6.2rem;
+  height: 6.2rem;
+  border-radius: 50%;
+  margin-right: 1.5rem;
+}
+
+.author__link {
+  display: block;
+  color: #4ca9ff;
+}
+
+/*--------------FOOTER--------------*/
+.footer {
+  padding-top: 10rem;
+  color: #cfd2ff;
+  background-color: #4a24a8;
+}
+
+.footer__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  margin: 2rem 0 9rem;
+}
+
+.footer__para {
+  max-width: 650px;
+  margin-right: 5rem;
+}
+
+.footer__bottom {
+  color: #fff;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 2rem 0;
+  border-top: 1px solid rgba(100, 100, 100, 0.5);
+}
+
+.footer__bottom span {
+  color: #4ca9ff;
+}
