@@ -42,6 +42,9 @@
     -ms-flex-direction: column;
     flex-direction: column;
   }
+  .skills__skill {
+    width: 100%;
+  }
   .works__tab {
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;

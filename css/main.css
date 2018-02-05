@@ -365,8 +365,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .skills__skill {
-  -ms-flex-preferred-size: 33.3333%;
-  flex-basis: 33.3333%;
+  width: 33.33333%;
   padding: 3rem 3%;
   -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   -o-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -482,6 +481,16 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
   -webkit-box-shadow: 0 30px 30px rgba(76, 169, 255, 0.3);
   box-shadow: 0 30px 30px rgba(76, 169, 255, 0.3);
+  -webkit-transition: -webkit-box-shadow .3s;
+  transition: -webkit-box-shadow .3s;
+  -o-transition: box-shadow .3s;
+  transition: box-shadow .3s;
+  transition: box-shadow .3s, -webkit-box-shadow .3s;
+}
+
+.btn:hover {
+  -webkit-box-shadow: 0 20px 30px -10px rgba(76, 169, 255, 0.3);
+  box-shadow: 0 20px 30px -10px rgba(76, 169, 255, 0.3);
 }
 
 .works__progress {

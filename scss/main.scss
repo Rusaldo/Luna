@@ -260,7 +260,7 @@ h1,h2,h3,h4,h5,h6 {
   flex-wrap: wrap;
 }
 .skills__skill {
-  flex-basis: 33.3333%;
+  width: 33.33333%;
   padding: 3rem 3%;
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
   min-width: 243px;
@@ -347,6 +347,10 @@ h1,h2,h3,h4,h5,h6 {
   color: $white;
   text-decoration: none;
   box-shadow: 0 30px 30px rgba(76, 169, 255, 0.3);
+  transition: box-shadow .3s;
+  &:hover {
+    box-shadow: 0 20px 30px -10px rgba(76, 169, 255, 0.3);
+  }
 }
 .works__progress {
   width: 100%;
