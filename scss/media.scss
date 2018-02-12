@@ -28,6 +28,9 @@
   html {
     font-size: 8.5px;
   }
+  .header__heading {
+    font-size: 6rem;
+  }
   .photos__item {
     min-width: 50%;
   }
@@ -66,13 +69,8 @@
   html {
     font-size: 8px;
   }
-  .header {
-    height: 90vh;
-  }
   .header__heading {
-    font-size: 7vw;
-    margin: 0;
-    padding: 30vh 0;
+    font-size: 4rem;
   }
   .photos__item {
     min-width: 100%;
